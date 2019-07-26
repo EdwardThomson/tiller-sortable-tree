@@ -489,9 +489,9 @@
                                 treeIndex: treeIndex
                             });
                         }
-                    }), connectDragPreview(_react2.default.createElement("div", {
+                    }), _react2.default.createElement("div", {
                         className: _nodeContentRenderer2.default.rowWrapper + (canDrag ? "" : " " + _nodeContentRenderer2.default.rowWrapperDragDisabled)
-                    }, handle, _react2.default.createElement("div", {
+                    }, connectDragPreview(_react2.default.createElement("div", {
                         style: {
                             display: "flex"
                         }
@@ -502,7 +502,7 @@
                         }, style)
                     }, _react2.default.createElement("div", {
                         className: _nodeContentRenderer2.default.rowContents + (canDrag ? "" : " " + _nodeContentRenderer2.default.rowContentsDragDisabled)
-                    }, _react2.default.createElement("div", {
+                    }, handle, _react2.default.createElement("div", {
                         className: _nodeContentRenderer2.default.rowToolbar
                     }, icons.map(function(icon, index) {
                         return _react2.default.createElement("div", {
