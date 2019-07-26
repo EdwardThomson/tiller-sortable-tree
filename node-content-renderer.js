@@ -134,7 +134,7 @@ class FileThemeNodeContentRenderer extends Component {
           {connectDragPreview(
             <div style={{ display: 'flex' }}>
               { handle }
-              {scaffold}
+              { scaffold }
               <div
                 className={
                   styles.row +
