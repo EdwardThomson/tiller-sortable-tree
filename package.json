@@ -1,5 +1,5 @@
 {
-  "name": "react-sortable-tree-theme-tiller",
+  "name": "tiller-sortable-tree",
   "version": "2.0.0",
   "description": "File explorer theme for react-sortable-tree",
   "scripts": {
