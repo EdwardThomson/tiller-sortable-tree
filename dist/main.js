@@ -509,7 +509,7 @@
                         node: node,
                         path: path,
                         treeIndex: treeIndex
-                    }) : nodeTitle)), _react2.default.createElement("div", {
+                    }) : nodeTitle)), _react2.default.createElement("div", null, "HELLO"), _react2.default.createElement("div", {
                         className: _nodeContentRenderer2.default.rowToolbar
                     }, buttons.map(function(btn, index) {
                         return _react2.default.createElement("div", {
