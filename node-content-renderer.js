@@ -169,7 +169,7 @@ class FileThemeNodeContentRenderer extends Component {
                         : nodeTitle}
                     </span>
                   </div>
-
+                  <div>HELLO</div>
                   <div className={styles.rowToolbar}>
                     {buttons.map((btn, index) => (
                       <div
