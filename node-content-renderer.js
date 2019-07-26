@@ -133,6 +133,7 @@ class FileThemeNodeContentRenderer extends Component {
           {/* Set the row preview to be used during drag and drop */}
           {connectDragPreview(
             <div style={{ display: 'flex' }}>
+              { handle }
               {scaffold}
               <div
                 className={
@@ -156,7 +157,6 @@ class FileThemeNodeContentRenderer extends Component {
                     (!canDrag ? ` ${styles.rowContentsDragDisabled}` : '')
                   }
                 >
-                  { handle }
                   <div className={styles.rowToolbar}>
                     {icons.map((icon, index) => (
                       <div

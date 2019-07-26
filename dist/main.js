@@ -495,14 +495,14 @@
                         style: {
                             display: "flex"
                         }
-                    }, scaffold, _react2.default.createElement("div", {
+                    }, handle, scaffold, _react2.default.createElement("div", {
                         className: _nodeContentRenderer2.default.row + (isLandingPadActive ? " " + _nodeContentRenderer2.default.rowLandingPad : "") + (isLandingPadActive && !canDrop ? " " + _nodeContentRenderer2.default.rowCancelPad : "") + (isSearchMatch ? " " + _nodeContentRenderer2.default.rowSearchMatch : "") + (isSearchFocus ? " " + _nodeContentRenderer2.default.rowSearchFocus : "") + (className ? " " + className : ""),
                         style: _extends({
                             opacity: isDraggedDescendant ? .5 : 1
                         }, style)
                     }, _react2.default.createElement("div", {
                         className: _nodeContentRenderer2.default.rowContents + (canDrag ? "" : " " + _nodeContentRenderer2.default.rowContentsDragDisabled)
-                    }, handle, _react2.default.createElement("div", {
+                    }, _react2.default.createElement("div", {
                         className: _nodeContentRenderer2.default.rowToolbar
                     }, icons.map(function(icon, index) {
                         return _react2.default.createElement("div", {
