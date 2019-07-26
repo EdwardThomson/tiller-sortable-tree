@@ -92,6 +92,14 @@ class FileThemeNodeContentRenderer extends Component {
       }
     });
 
+    let handle;
+
+    if (canDrag) {
+      handle = connectDragSource(<div className="lr-c-draghandle">Handle</div>, {
+        dropEffect: 'copy',
+      });
+    }
+
     const nodeContent = (
       <div style={{ height: '100%' }} {...otherProps}>
         {toggleChildrenVisibility &&
@@ -148,6 +156,7 @@ class FileThemeNodeContentRenderer extends Component {
                     (!canDrag ? ` ${styles.rowContentsDragDisabled}` : '')
                   }
                 >
+                  { handle }
                   <div className={styles.rowToolbar}>
                     {icons.map((icon, index) => (
                       <div
@@ -169,7 +178,6 @@ class FileThemeNodeContentRenderer extends Component {
                         : nodeTitle}
                     </span>
                   </div>
-                  <div>HELLO</div>
                   <div className={styles.rowToolbar}>
                     {buttons.map((btn, index) => (
                       <div
@@ -188,9 +196,11 @@ class FileThemeNodeContentRenderer extends Component {
       </div>
     );
 
-    return canDrag
+    /*return canDrag
       ? connectDragSource(nodeContent, { dropEffect: 'copy' })
-      : nodeContent;
+      : nodeContent;*/
+
+    return nodeContent;
   }
 }
 

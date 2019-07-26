@@ -463,7 +463,15 @@
                             }));
                         }
                     });
-                    var nodeContent = _react2.default.createElement("div", _extends({
+                    var handle = void 0;
+                    /*return canDrag
+        ? connectDragSource(nodeContent, { dropEffect: 'copy' })
+        : nodeContent;*/
+                    return canDrag && (handle = connectDragSource(_react2.default.createElement("div", {
+                        className: "lr-c-draghandle"
+                    }, "Handle"), {
+                        dropEffect: "copy"
+                    })), _react2.default.createElement("div", _extends({
                         style: {
                             height: "100%"
                         }
@@ -494,7 +502,7 @@
                         }, style)
                     }, _react2.default.createElement("div", {
                         className: _nodeContentRenderer2.default.rowContents + (canDrag ? "" : " " + _nodeContentRenderer2.default.rowContentsDragDisabled)
-                    }, _react2.default.createElement("div", {
+                    }, handle, _react2.default.createElement("div", {
                         className: _nodeContentRenderer2.default.rowToolbar
                     }, icons.map(function(icon, index) {
                         return _react2.default.createElement("div", {
@@ -509,7 +517,7 @@
                         node: node,
                         path: path,
                         treeIndex: treeIndex
-                    }) : nodeTitle)), _react2.default.createElement("div", null, "HELLO"), _react2.default.createElement("div", {
+                    }) : nodeTitle)), _react2.default.createElement("div", {
                         className: _nodeContentRenderer2.default.rowToolbar
                     }, buttons.map(function(btn, index) {
                         return _react2.default.createElement("div", {
@@ -517,9 +525,6 @@
                             className: _nodeContentRenderer2.default.toolbarButton
                         }, btn);
                     }))))))));
-                    return canDrag ? connectDragSource(nodeContent, {
-                        dropEffect: "copy"
-                    }) : nodeContent;
                 }
             } ]), FileThemeNodeContentRenderer;
         }(_react.Component);
