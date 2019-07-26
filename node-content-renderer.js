@@ -124,15 +124,15 @@ class FileThemeNodeContentRenderer extends Component {
             />
           )}
 
-        <div
-          className={
-            styles.rowWrapper +
-            (!canDrag ? ` ${styles.rowWrapperDragDisabled}` : '')
-          }
-        >
+        {/* Set the row preview to be used during drag and drop */}
+        {connectDragPreview(
+          <div
+            className={
+              styles.rowWrapper +
+              (!canDrag ? ` ${styles.rowWrapperDragDisabled}` : '')
+            }
+          >
           { handle }
-          {/* Set the row preview to be used during drag and drop */}
-          {connectDragPreview(
             <div style={{ display: 'flex' }}>
               {scaffold}
               <div
@@ -191,9 +191,10 @@ class FileThemeNodeContentRenderer extends Component {
                 </div>
               </div>
             </div>
+          </div>
           )}
         </div>
-      </div>
+
     );
 
     /*return canDrag

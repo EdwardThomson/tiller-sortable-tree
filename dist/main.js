@@ -489,9 +489,9 @@
                                 treeIndex: treeIndex
                             });
                         }
-                    }), _react2.default.createElement("div", {
+                    }), connectDragPreview(_react2.default.createElement("div", {
                         className: _nodeContentRenderer2.default.rowWrapper + (canDrag ? "" : " " + _nodeContentRenderer2.default.rowWrapperDragDisabled)
-                    }, handle, connectDragPreview(_react2.default.createElement("div", {
+                    }, handle, _react2.default.createElement("div", {
                         style: {
                             display: "flex"
                         }
