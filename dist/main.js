@@ -368,7 +368,7 @@
         module.exports = {
             nodeContentRenderer: _nodeContentRenderer2.default,
             treeNodeRenderer: _treeNodeRenderer2.default,
-            scaffoldBlockPxWidth: 6,
+            scaffoldBlockPxWidth: 16,
             rowHeight: 32,
             slideRegionSize: 50
         };
