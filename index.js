@@ -16,7 +16,7 @@ import treeNodeRenderer from './tree-node-renderer';
 module.exports = {
   nodeContentRenderer,
   treeNodeRenderer,
-  scaffoldBlockPxWidth: 25,
-  rowHeight: 25,
+  scaffoldBlockPxWidth: 16,
+  rowHeight: 32,
   slideRegionSize: 50,
 };
