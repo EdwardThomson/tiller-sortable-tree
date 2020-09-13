@@ -368,8 +368,8 @@
         module.exports = {
             nodeContentRenderer: _nodeContentRenderer2.default,
             treeNodeRenderer: _treeNodeRenderer2.default,
-            scaffoldBlockPxWidth: 25,
-            rowHeight: 25,
+            scaffoldBlockPxWidth: 12,
+            rowHeight: 32,
             slideRegionSize: 50
         };
     }, /* 5 */
